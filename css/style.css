@@ -1,0 +1,1043 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Varela+Round&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-clr: #a5c926;
+  --bg-clr: #f8f8f8;
+  --logo-text: #333333;
+  --primary-text: #111111;
+  --h1-clr: #111111;
+  --secondary-text: #a5c926;
+  --card-one: #ffc12c;
+  --card-two: #fb416b;
+}
+
+body {
+  max-width: 1440px;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+  color: var(--primary-text);
+  background-color: var(--bg-clr);
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.header-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-clr);
+}
+
+.header-wrapper__info {
+  width: 100%;
+  max-width: 1200px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 0 15px;
+}
+
+.info-contacts__phone,
+.info-contacts__email {
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.info-contacts__phone {
+  font-size: 10px;
+  margin-right: 20px;
+}
+
+.info-contacts__email {
+  font-size: 11px;
+}
+
+.info-social__link {
+  margin-right: 5px;
+}
+
+.info-social__icon {
+  width: 18px;
+}
+
+.navigation-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nav-close__btn,
+.nav-menu__btn {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  font-family: "Varela Round", sans-serif;
+  font-size: 21px;
+  line-height: 32px;
+  font-weight: 400;
+  font-style: normal;
+  margin-right: 40px;
+  color: var(--primary-text);
+}
+
+.nav-menu__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu__item {
+  margin: 0 18px;
+}
+
+.nav-menu__link {
+  color: var(--primary-text);
+  position: relative;
+}
+
+.nav-menu__link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-clr);
+  bottom: -4px;
+  transition: width 0.2s linear;
+}
+
+.nav-menu__link:hover::after {
+  width: 100%;
+}
+
+.nav-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-cart__text {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.nav-cart__icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+  margin-right: 8px;
+}
+
+.nav-close {
+  position: absolute;
+  display: none;
+  width: 24px;
+  height: 24px;
+}
+
+.nav-cart__count {
+  font-size: 12px;
+  background-color: var(--primary-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: white;
+}
+
+.hero {
+  background-image: url("../images/hero.png");
+  width: 100%;
+  height: 640px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  max-width: 570px;
+  height: 100%;
+  max-height: 308px;
+  border-radius: 16px;
+  background: white;
+}
+
+.hero-wrapper__suptitle {
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--secondary-text);
+}
+
+.hero-wrapper__title {
+  font-family: "Varela Round", sans-serif;
+  font-size: 39px;
+  line-height: 48px;
+  margin-top: 17px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.btn {
+  display: flex;
+}
+
+.btn.btn-lg {
+  justify-content: center;
+  align-items: center;
+  width: 153px;
+  height: 48px;
+  border-radius: 24px;
+}
+
+.btn.btn-lg.green {
+  background-color: var(--primary-clr);
+  color: white;
+}
+
+.btn.btn-extra-lg {
+  justify-content: center;
+  align-items: center;
+  width: 173px;
+  height: 48px;
+  border-radius: 24px;
+  margin-top: 76px;
+}
+
+.btn.btn-extra-lg.green {
+  background-color: var(--primary-clr);
+  color: white;
+}
+
+.btn.btn-sm {
+  justify-content: center;
+  align-items: center;
+  width: 112px;
+  height: 40px;
+  border-radius: 20px;
+  color: #111111;
+}
+
+.btn.btn-sm.light {
+  background-color: white;
+}
+
+.card-wrapper {
+  width: 100%;
+  margin: 120px 0;
+}
+
+.card-wrapper__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-wrapper__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 570px;
+  height: 188px;
+  background-color: var(--card-one);
+  border-radius: 16px;
+}
+
+.card-wrapper__item:last-child {
+  background-color: var(--card-two);
+  margin-left: 30px;
+}
+
+.card-img-one,
+.card-img-two {
+  display: block;
+  width: 220px;
+  height: 220px;
+  height: auto;
+  position: absolute;
+  bottom: 26px;
+}
+
+.card-img-one {
+  left: 20px;
+}
+
+.card-img-two {
+  right: 15px;
+}
+
+.card-body {
+  margin-left: 127px;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+.card-body.left {
+  margin-left: auto;
+  margin-right: 93px;
+  align-items: start;
+}
+
+.card-title {
+  font-family: "Varela Round", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 120px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+
+.catalog-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.catalog-header__title {
+  font-family: "Varela Round", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.catalog-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  font-size: 13px;
+  line-height: 20px;
+  position: relative;
+  color: var(--primary-text);
+}
+
+.catalog-link::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #e5e5e5;
+  bottom: 0;
+}
+.catalog-link__arrow {
+  margin-left: 6px;
+  width: 14px;
+}
+
+.catalog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 15px;
+}
+.swiper {
+  width: 100%;
+  max-width: 1440px;
+  height: 328px;
+}
+
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 270px !important;
+  height: 328px;
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: 0px 1px 2px 0px #00000026;
+}
+.catalog-item__img {
+  width: 182px;
+  height: auto;
+}
+
+.catalog-item__title {
+  margin-top: 25px;
+  margin-bottom: 12px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.catalog-item__price {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  background-color: var(--primary-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 92px;
+  height: 24px;
+  border-radius: 16px;
+  color: white;
+}
+.story {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 464px;
+  background-image: url("../images/story.png");
+}
+
+.story-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 800px;
+}
+
+.story-wrapper__suptitle {
+  font-size: 13px;
+  line-height: 16px;
+}
+.story-wrapper__title {
+  font-family: "Varela Round", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+  margin: 18px 0;
+}
+
+.play-btn {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-clr);
+  margin-top: 26px;
+}
+
+.play-icon {
+  width: 15px;
+  height: 18px;
+}
+
+.webflow {
+  width: 100%;
+  max-width: 1200px;
+  margin: 120px auto;
+}
+
+.webflow-item {
+  text-align: center;
+}
+
+.webflow-item__suptitle {
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--secondary-text);
+}
+
+.webflow-item__title {
+  font-family: "Varela Round", sans-serif;
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-top: 18px;
+  margin-bottom: 95px;
+}
+
+.webflow-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.webflow-desc__title {
+  font-family: "Varela Round", sans-serif;
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.webflow-desc__line {
+  display: block;
+  width: 70px;
+  height: 2px;
+  background-color: var(--primary-clr);
+  margin: 24px 0;
+}
+
+.webflow-desc__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #999999;
+  width: 450px;
+  margin-bottom: 26px;
+}
+.webflow-img {
+  width: 100%;
+  max-width: 567px;
+}
+
+.subscribe {
+  width: 100%;
+  max-width: 1150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0px 1px 2px 0px #00000026;
+  padding: 47px;
+}
+.subscribe-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe-wrapper__btn {
+  width: 63px;
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-clr);
+  margin-right: 24px;
+}
+.subscribe-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.subscribe-text {
+  font-family: "Varela Round", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.subscribe-text__color {
+  color: var(--secondary-text);
+}
+
+.subscribe-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribe-control__input {
+  max-width: 100%;
+  width: 376px;
+  height: 47px;
+  border-radius: 24px;
+  background-color: #f8f8f8;
+  border: 2px solid #e5e5e5;
+}
+
+.subscribe-control__input:focus,
+.subscribe-control__input::placeholder {
+  background-color: #f8f8f8;
+  border-color: #e5e5e5;
+  padding: 0 15px;
+}
+
+.subscribe-control__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 47px;
+  background-color: var(--primary-clr);
+  border-radius: 24px;
+  margin-left: 16px;
+  cursor: pointer;
+  color: white;
+}
+.instagram-wrapper {
+  margin: 120px auto;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+}
+.instagram-images {
+  padding: 0 33px;
+}
+.instagram-wrapper__suptitle {
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--secondary-text);
+}
+
+.instagram-wrapper__title {
+  font-family: "Varela Round", sans-serif;
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-top: 17px;
+  margin-bottom: 85px;
+}
+
+.instagram-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(172px, 1fr));
+  gap: 15px;
+}
+.instagram-btn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer {
+  background-color: var(--primary-clr);
+  padding-top: 47px;
+  padding-bottom: 31px;
+  width: 100%;
+}
+
+.footer-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-nav__logo {
+  font-family: "Varela Round", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 32px;
+  color: white;
+}
+
+.footer-nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav__item {
+  margin: 0 14px;
+}
+
+.footer-nav__link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: white;
+}
+
+.footer-social__list {
+  display: flex;
+  justify-content: center;
+}
+.footer-social__item {
+  margin: 0 6px;
+}
+.footer-line {
+  background-color: #ffffff40;
+  display: flex;
+  width: 100%;
+  height: 2px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 47px;
+  margin-bottom: 33px;
+}
+
+.footer-copyright {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-point {
+  display: block;
+  width: 3px;
+  height: 3px;
+  background-color: white;
+  margin: 0 8px;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    padding: 0 16px;
+  }
+  .catalog-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  .catalog-item {
+    width: 100%;
+  }
+  .footer-wrapper {
+    padding: 0 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .catalog-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  .catalog-item {
+    width: 100%;
+  }
+  .webflow-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .webflow-img {
+    margin-top: 32px;
+  }
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+  }
+  .subscribe-control {
+    margin-top: 32px;
+  }
+  .card-wrapper__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-wrapper__item {
+    margin: 16px 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    padding: 0;
+  }
+  .header-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-clr);
+  }
+  .info-contacts__phone,
+  .info-contacts__email {
+    display: block;
+    width: 100%;
+  }
+  .header-wrapper__info {
+    width: 100%;
+    max-width: 1200px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 0 15px;
+  }
+  .catalog {
+    padding: 0 16px;
+    margin-bottom: 32px;
+  }
+
+  .catalog-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  .catalog-item {
+    width: 100%;
+  }
+  .webflow-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .webflow-img {
+    margin-top: 32px;
+  }
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+  }
+  .subscribe-control {
+    margin-top: 32px;
+  }
+  .card-wrapper__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-wrapper__item {
+    margin: 16px 0;
+  }
+
+  .navigation-wrapper {
+    background-color: #fff;
+  }
+  .nav-menu__btn {
+    display: block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  .nav-close__btn {
+    display: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  .nav-close__btn {
+    position: absolute;
+    right: 16px;
+    top: 130px;
+    display: none;
+    z-index: 100;
+  }
+  .nav-close__btn.active {
+    display: block;
+  }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vh;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 1px 2px 0px #00000026;
+    width: 100%;
+  }
+  .nav-menu.active {
+    display: flex;
+  }
+  .nav-menu__item {
+    margin: 32px 0;
+  }
+  .logo {
+    margin-right: 0;
+  }
+  .nav-menu__list {
+    display: flex;
+    flex-direction: column;
+    float: left;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero {
+    padding: 0 16px;
+  }
+  .hero-wrapper__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 17px;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+  .btn.btn-lg {
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 32px;
+    border-radius: 16px;
+  }
+  .card-wrapper {
+    padding: 0 16px;
+  }
+  .card-wrapper__item {
+    width: 100%;
+    height: 188px;
+    border-radius: 16px;
+    padding: 0 16px;
+  }
+
+  .card-wrapper__item:last-child {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+  .card-img-one,
+  .card-img-two {
+    display: none;
+  }
+
+  .card-body {
+    margin-left: 127px;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+  }
+
+  .card-body.left {
+    margin-left: auto;
+    margin-right: 93px;
+    align-items: start;
+  }
+
+  .card-title {
+    font-family: "Varela Round", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: white;
+    margin-bottom: 16px;
+  }
+
+  .webflow-item__title {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .catalog-header__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .footer-nav,
+  .footer-nav__list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+  }
+  .footer-nav__item {
+    margin: 16px 0;
+  }
+  .webflow-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+  }
+  .webflow-desc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .webflow-desc__title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .webflow-desc__text {
+    line-height: 24px;
+    width: 100%;
+  }
+  .subscribe-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .subscribe-wrapper__btn {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+  .subscribe-text {
+    font-size: 20px;
+  }
+  .subscribe-control {
+    flex-direction: column;
+  }
+  .subscribe-control__input {
+    max-width: 100%;
+    width: 280px;
+  }
+  .subscribe-control__btn {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+  .instagram-wrapper__title {
+    font-size: 26px;
+  }
+}

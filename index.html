@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <title>ToyStore</title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- Contacts information -->
+      <section class="header-wrapper">
+        <div class="header-wrapper__info">
+          <div class="info-contacts">
+            <span class="info-contacts__phone">Call Us: +1 213 974-5898</span>
+            <span class="info-contacts__email"
+              >Email: toystore@template.com</span
+            >
+          </div>
+          <div class="info-social">
+            <a href="" class="info-social__link">
+              <img
+                class="info-social__icon"
+                src="images/twitter.svg"
+                alt="twitter"
+              />
+            </a>
+            <a href="" class="info-social__link">
+              <img
+                class="info-social__icon"
+                src="images/fb.svg"
+                alt="facebook"
+              />
+            </a>
+            <a href="" class="info-social__link">
+              <img class="info-social__icon" src="images/inst.svg" alt="" />
+            </a>
+            <a href="" class="info-social__link">
+              <img class="info-social__icon" src="images/pint.svg" alt="" />
+            </a>
+            <a href="" class="info-social__link">
+              <img class="info-social__icon" src="images/youtube.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- End Contacts information -->
+
+      <!-- Navigation -->
+      <section class="navigation-wrapper">
+        <img src="images/menu.svg" alt="" class="nav-menu__btn" />
+        <nav class="nav-menu">
+          <a href="index.html" class="logo">ToyStore</a>
+          <ul class="nav-menu__list">
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link">Catalog</a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link">Delivery</a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link">About</a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-cart">
+          <span class="nav-cart__text">Cart</span>
+          <a href="">
+            <img class="nav-cart__icon" src="images/cart.svg" alt="" />
+          </a>
+          <span class="nav-cart__count">0</span>
+        </div>
+        <img src="images/close.svg" alt="" class="nav-close__btn" />
+      </section>
+      <!-- End Navigation -->
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-wrapper">
+        <span class="hero-wrapper__suptitle">Say Hello to ToyStore!</span>
+        <h2 class="hero-wrapper__title">
+          Free Ecommerce <br />Template for Webflow
+        </h2>
+        <a href="" class="btn btn-lg green">Open Catalog</a>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <!-- Card -->
+    <section class="card-wrapper">
+      <div class="card-wrapper__list">
+        <div class="card-wrapper__item">
+          <img src="images/pic1.png" alt="" class="card-img-one" />
+          <div class="card-body left">
+            <h6 class="card-title">Stuffed Animals</h6>
+            <a href="" class="btn btn-sm light">Shop Now</a>
+          </div>
+        </div>
+        <div class="card-wrapper__item">
+          <img src="images/pic5.png" alt="" class="card-img-two" />
+          <div class="card-body">
+            <h6 class="card-title">Wooden toys</h6>
+            <a href="" class="btn btn-sm light">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Card -->
+    <!-- Catalog -->
+    <section class="catalog">
+      <div class="catalog-header">
+        <h4 class="catalog-header__title">Stuffed Animals</h4>
+        <a href="" class="catalog-link"
+          >See All Toys
+          <img class="catalog-link__arrow" src="images/Arrow.svg" alt=""
+        /></a>
+      </div>
+      <div class="swiper">
+        <ul class="catalog-list swiper-wrapper">
+          <li class="catalog-item swiper-slide">
+            <img src="images/pic1.png" alt="" class="catalog-item__img" />
+            <span class="catalog-item__title">Teddy Bear</span>
+            <span class="catalog-item__price">$ 30.00 USD</span>
+          </li>
+          <li class="catalog-item swiper-slide">
+            <img src="images/pic2.png" alt="" class="catalog-item__img" />
+            <span class="catalog-item__title">Mega Plush Toy</span>
+            <span class="catalog-item__price">$ 38.00 USD</span>
+          </li>
+          <li class="catalog-item swiper-slide">
+            <img src="images/pic3.png" alt="" class="catalog-item__img" />
+            <span class="catalog-item__title">Cute Dog</span>
+            <span class="catalog-item__price">$ 24.00 USD</span>
+          </li>
+          <li class="catalog-item swiper-slide">
+            <img src="images/pic4.png" alt="" class="catalog-item__img" />
+            <span class="catalog-item__title">Little Friend</span>
+            <span class="catalog-item__price">$ 27.00 USD</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- End Catalog -->
+    <!-- Catalog -->
+    <section class="catalog">
+      <div class="catalog-header">
+        <h4 class="catalog-header__title">Wooden Toys</h4>
+        <a href="" class="catalog-link"
+          >See All Toys
+          <img class="catalog-link__arrow" src="images/Arrow.svg" alt=""
+        /></a>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <ul class="catalog-list swiper-wrapper">
+          <li class="catalog-item swiper-slide">
+            <img src="images/pic5.png" alt="" class="catalog-item__img" />
+            <span class="catalog-item__title">Happy Flower</span>
+            <span class="catalog-item__price">$ 38.00 USD</span>
+          </li>
+          <li class="catalog-item swiper-slide">
+            <img src="images/pic6.png" alt="" class="catalog-item__img" />
+            <span class="catalog-item__title">Lift Machine</span>
+            <span class="catalog-item__price">$ 24.00 USD</span>
+          </li>
+          <li class="catalog-item swiper-slide">
+            <img src="images/pic7.png" alt="" class="catalog-item__img" />
+            <span class="catalog-item__title">Wooden Camera</span>
+            <span class="catalog-item__price">$ 32.00 USD</span>
+          </li>
+          <li class="catalog-item swiper-slide">
+            <img src="images/pic8.png" alt="" class="catalog-item__img" />
+            <span class="catalog-item__title">Little Rabbit</span>
+            <span class="catalog-item__price">$ 16.00 USD</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- End Catalog -->
+    <!-- Story -->
+    <section class="story">
+      <div class="story-wrapper">
+        <span class="story-wrapper__suptitle">About The Shop</span>
+        <h2 class="story-wrapper__title">Watch Our Story</h2>
+        <p class="story-wrapper__text">
+          There is no magic formula to write perfect ad copy. It is based on a
+          number of factors, including ad placement, demographic, even the
+          consumer’s mood.
+        </p>
+        <a href="" class="play-btn"
+          ><img class="play-icon" src="images/play.svg" alt=""
+        /></a>
+      </div>
+    </section>
+    <!-- End Story -->
+    <!-- Webflow -->
+    <section class="webflow">
+      <article class="webflow-item">
+        <p class="webflow-item__suptitle">Made for Webflow</p>
+        <h2 class="webflow-item__title">
+          Simple & Colorful Ecommerce <br />Template for Your Business
+        </h2>
+      </article>
+      <article class="webflow-wrapper">
+        <div class="webflow-desc">
+          <h2 class="webflow-desc__title">Available for FREE!</h2>
+          <span class="webflow-desc__line"></span>
+          <p class="webflow-desc__text">
+            A successful marketing plan relies heavily on the pulling-power of
+            advertising copy. Writing result-oriented ad copy is difficult, as
+            it must appeal to, entice, and convince consumers to take action.
+            There is no magic formula to write perfect ad copy
+          </p>
+          <a href="" class="btn btn-lg green">GET IT NOW!</a>
+        </div>
+        <img class="webflow-img" src="images/webflow.png" />
+      </article>
+    </section>
+    <!-- End Webflow -->
+    <!-- Subscribe -->
+    <section class="subscribe">
+      <div class="subscribe-wrapper">
+        <a href="" class="subscribe-wrapper__btn"
+          ><img class="subscribe-icon" src="images/paperplane-icon.svg" alt=""
+        /></a>
+        <p class="subscribe-text">
+          Subscribe to our newsletter <br />& get
+          <span class="subscribe-text__color">10% discount!</span>
+        </p>
+      </div>
+      <form action="" class="subscribe-control">
+        <input class="subscribe-control__input" type="text" />
+        <button class="subscribe-control__btn">SEND</button>
+      </form>
+    </section>
+    <!-- End Subscribe -->
+    <!-- Instagram -->
+    <section class="instagram-wrapper">
+      <span class="instagram-wrapper__suptitle">@ElasticThemes</span>
+      <h2 class="instagram-wrapper__title">We're on Instagram!</h2>
+      <div class="instagram-images">
+        <img src="images/instagram1.png" alt="" class="instagram-img" />
+        <img src="images/instagram2.png" alt="" class="instagram-img" />
+        <img src="images/instagram3.png" alt="" class="instagram-img" />
+        <img src="images/instagram4.png" alt="" class="instagram-img" />
+        <img src="images/instagram5.png" alt="" class="instagram-img" />
+        <img src="images/instagram6.png" alt="" class="instagram-img" />
+      </div>
+      <div class="instagram-btn">
+        <a href="" class="btn btn-extra-lg green">See More Photos</a>
+      </div>
+    </section>
+    <!-- End Instagram -->
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-nav">
+          <a href="index.html" class="footer-nav__logo">ToyStore</a>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">Home</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">Catalog</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">Delivery</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">About</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">Contacts</a>
+            </li>
+          </ul>
+          <ul class="footer-social__list">
+            <li class="footer-social__item">
+              <a href="" class="footer-social__link"
+                ><img src="images/twitter.svg" alt=""
+              /></a>
+            </li>
+            <li class="footer-social__item">
+              <a href="" class="footer-social__link"
+                ><img src="images/fb.svg" alt=""
+              /></a>
+            </li>
+            <li class="footer-social__item">
+              <a href="" class="footer-social__link"
+                ><img src="images/inst.svg" alt=""
+              /></a>
+            </li>
+            <li class="footer-social__item">
+              <a href="" class="footer-social__link"
+                ><img src="images/pint.svg" alt=""
+              /></a>
+            </li>
+            <li class="footer-social__item">
+              <a href="" class="footer-social__link"
+                ><img src="images/youtube.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <span class="footer-line"></span>
+        <div class="footer-copyright">
+          <p>Created with love by Elastic Themes</p>
+          <p class="footer-text">
+            Powered by Webflow <span class="footer-point"></span>Style Guide
+            <span class="footer-point"></span> Licensing
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
