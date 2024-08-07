@@ -795,7 +795,7 @@ button {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 460px) {
   body {
     padding: 0;
   }
